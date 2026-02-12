@@ -1,4 +1,4 @@
-import { Wrench, Disc, Zap, Cog, Cable, Wind, ClipboardCheck, type LucideIcon } from "lucide-react";
+import { Wrench, Disc, Cog, Cable, type LucideIcon } from "lucide-react";
 
 export interface Service {
   title: string;
