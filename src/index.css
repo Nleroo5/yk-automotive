@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Custom Colors */
+  --color-primary: #226E93;
+  --color-primary-dark: #1A5570;
+  --color-accent: #F8F9FA;
+  --color-accent-dark: #E9ECEF;
+  --color-foreground: #1F2937;
+  --color-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-trust-gold: #F59E0B;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+
+  /* Font Families */
+  --font-sans: 'Lato', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override any default anchor styles */
+a {
+  text-decoration: none;
+}
