@@ -53,7 +53,7 @@ export function CarCard() {
         <div className="card-padding-sm space-y-6">
           {/* Description */}
           <p className="text-foreground fluid-body leading-relaxed">
-            At YK Automotive, we treat every vehicle like our own. Located in Peachtree City, GA, we're committed to providing honest, high-quality service that keeps your car running at its best.
+            At VAP Performance & Auto Care, we treat every vehicle like our own. Located in Peachtree City, GA, we're committed to providing honest, high-quality service that keeps your car running at its best.
           </p>
 
           {/* Features List */}
@@ -91,7 +91,7 @@ export function CarCard() {
             <p className="text-foreground italic text-base leading-relaxed">
               "Quality service, honest pricing, and customer satisfaction are our top priorities."
             </p>
-            <p className="text-primary font-bold text-sm mt-3">— YK Automotive</p>
+            <p className="text-primary font-bold text-sm mt-3">— VAP Performance & Auto Care</p>
           </div>
         </div>
       </div>

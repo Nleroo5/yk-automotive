@@ -28,11 +28,21 @@ export function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* Responsive Service Cards Grid - Auto-fit Pattern */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
-          {services.map((service, i) => (
-            <ServiceCard key={service.title} service={service} index={i} />
-          ))}
+        {/* Service Cards Grid - 3-2 Layout */}
+        <div className="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-10">
+          {/* Top Row: 3 Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-8 lg:gap-10">
+            {services.slice(0, 3).map((service, i) => (
+              <ServiceCard key={service.title} service={service} index={i} />
+            ))}
+          </div>
+
+          {/* Bottom Row: 2 Cards Centered */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-6 md:gap-8 lg:gap-10 max-w-4xl mx-auto">
+            {services.slice(3, 5).map((service, i) => (
+              <ServiceCard key={service.title} service={service} index={i + 3} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

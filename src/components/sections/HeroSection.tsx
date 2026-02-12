@@ -129,17 +129,17 @@ export function HeroSection() {
               Schedule Service
             </motion.a>
             <motion.a
-              href="tel:7706321515"
+              href="tel:4706299948"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all border-2 border-white/30"
             >
-              <span className="mr-2">📞</span> (770) 632-1515
+              <span className="mr-2">📞</span> (470) 629-9948
             </motion.a>
           </div>
         </motion.div>
 
-        {/* Trust Indicator - 5-Star Rating */}
+        {/* Trust Indicator - 4.8-Star Rating */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ export function HeroSection() {
         >
           <div className="p-6 text-center">
             {/* Swooping Stars Animation */}
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, scale: 0, rotate: -180, x: -100 }}
               animate={{ opacity: 1, scale: 1, rotate: 0, x: 0 }}
               transition={{
@@ -158,17 +158,18 @@ export function HeroSection() {
                 stiffness: 200,
                 damping: 15
               }}
-              className="text-3xl sm:text-4xl font-black mb-2"
+              className="text-3xl sm:text-4xl font-black mb-2 flex items-center justify-center gap-0.5"
             >
-              ★★★★★
-            </motion.p>
+              <span>★★★★</span>
+              <span className="opacity-80">★</span>
+            </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.5 }}
               className="text-white font-bold text-base sm:text-lg"
             >
-              5-Star Rated
+              4.8 Star Rated
             </motion.p>
           </div>
         </motion.div>

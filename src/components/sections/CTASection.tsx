@@ -32,13 +32,13 @@ export function CTASection() {
                 className="absolute inset-0 rounded-xl bg-primary/10 blur-sm"
               />
               <motion.a
-                href="tel:4044558817"
+                href="tel:4706299948"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="relative inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:bg-primary-dark transition-colors"
               >
                 <Phone className="w-6 h-6" />
-                Call Now: (404) 455-8817
+                Call Now: (470) 629-9948
               </motion.a>
             </div>
 
@@ -46,7 +46,7 @@ export function CTASection() {
             <div className="mt-8 flex items-start gap-3 text-muted">
               <Clock className="w-5 h-5 shrink-0 mt-0.5" />
               <div className="text-sm">
-                <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+                <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
                 <p>Saturday & Sunday: Closed</p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function CTASection() {
             className="rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-200"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13268.492!2d-84.5821946!3d33.3846983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4eb69084bbd2b%3A0x6e2174450fabd163!2sYK%20Automotive!5e0!3m2!1sen!2sus!4v1707700000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.6!2d-84.5968!3d33.3875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDIzJzE1LjAiTiA4NMKwMzUnNDguNSJX!5e0!3m2!1sen!2sus!4v1707700000000!5m2!1sen!2sus"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -69,7 +69,7 @@ export function CTASection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-80 sm:h-96"
-              title="YK Automotive - 313 Dividend Drive, Peachtree City, GA 30269"
+              title="VAP Performance & Auto Care - 341 D Bob Industrial Drive, Unit C, Peachtree City, GA 30269"
             />
           </motion.div>
         </div>

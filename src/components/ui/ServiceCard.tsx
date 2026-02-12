@@ -10,21 +10,14 @@ interface ServiceCardProps {
 export function ServiceCard({ service, index }: ServiceCardProps) {
   const Icon = service.icon;
 
-  // Determine slide direction for outer cards - reduced for smoother mobile animation
-  const isLeftCard = index === 0 || index === 3;
-  const isRightCard = index === 2 || index === 4;
-
-  // Responsive initial X values - less extreme on mobile
-  const initialX = isLeftCard ? -80 : isRightCard ? 80 : 0;
-
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40, x: initialX }}
-      whileInView={{ opacity: 1, y: 0, x: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{
-        delay: index * 0.08,
-        duration: 0.6,
+        delay: index * 0.1,
+        duration: 0.5,
         ease: [0.25, 0.46, 0.45, 0.94] // Smooth easeOut curve
       }}
       whileHover={{

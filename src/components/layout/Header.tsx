@@ -47,7 +47,7 @@ export function Header() {
           <a href="#" className="flex items-center" onClick={(e) => handleNavClick(e, "#")}>
             <img
               src="/yk-logo.png"
-              alt="YK Automotive Logo"
+              alt="VAP Performance & Auto Care Logo"
               className="w-12 sm:w-14 md:w-16 lg:w-20 h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
             />
           </a>
@@ -69,14 +69,14 @@ export function Header() {
           {/* CTA Button + Mobile Menu Toggle */}
           <div className="flex items-center gap-3 sm:gap-4">
             <motion.a
-              href="tel:7706321515"
+              href="tel:4706299948"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="hidden sm:flex items-center gap-2 bg-primary text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:bg-primary-dark transition-colors shadow-md font-bold text-sm"
             >
               <Phone className="w-4 h-4" />
               <span className="hidden md:inline">Call Now: </span>
-              <span>(770) 632-1515</span>
+              <span>(470) 629-9948</span>
             </motion.a>
 
             {/* Mobile Menu Button */}
@@ -125,7 +125,7 @@ export function Header() {
                   </a>
                 ))}
                 <a
-                  href="tel:7706321515"
+                  href="tel:4706299948"
                   className="mt-4 flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors shadow-md font-bold text-sm"
                 >
                   <Phone className="w-4 h-4" />

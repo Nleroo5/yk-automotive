@@ -20,12 +20,12 @@ export function Footer() {
             <div className="flex items-center mb-4">
               <img
                 src="/yk-logo.png"
-                alt="YK Automotive Logo"
+                alt="VAP Performance & Auto Care Logo"
                 className="w-14 sm:w-16 md:w-20 lg:w-24 h-14 sm:h-16 md:h-20 lg:h-24 object-contain"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Your trusted partner for automotive service and quality used vehicles in Atlanta, GA.
+              Your trusted partner for automotive service and repair in Peachtree City, GA.
             </p>
           </div>
 
@@ -55,34 +55,27 @@ export function Footer() {
             <h4 className="font-bold text-white mb-4 text-sm">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <a
-                href="tel:7706321515"
+                href="tel:4706299948"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4 shrink-0" />
-                (770) 632-1515
+                (470) 629-9948
               </a>
               <a
-                href="tel:4044558817"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <Phone className="w-4 h-4 shrink-0" />
-                (404) 455-8817
-              </a>
-              <a
-                href="mailto:yksalesrepairs@gmail.com"
+                href="mailto:info@vapautomotive.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4 shrink-0" />
-                yksalesrepairs@gmail.com
+                info@vapautomotive.com
               </a>
               <a
-                href="https://www.google.com/maps/place/33.3846983,-84.5821946"
+                href="https://www.google.com/maps/place/341+D+Bob+Industrial+Dr,+Peachtree+City,+GA+30269"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-2 hover:text-primary transition-colors"
               >
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                <span>313 Dividend Drive<br />Peachtree City, GA 30269</span>
+                <span>341 D Bob Industrial Drive, Unit C<br />Peachtree City, GA 30269</span>
               </a>
             </div>
           </div>
@@ -93,7 +86,7 @@ export function Footer() {
             <div className="flex items-start gap-2 text-sm">
               <Clock className="w-4 h-4 shrink-0 mt-0.5" />
               <div>
-                <p>Mon–Fri: 8:00 AM – 5:00 PM</p>
+                <p>Mon–Fri: 9:00 AM – 6:00 PM</p>
                 <p>Sat–Sun: Closed</p>
               </div>
             </div>
@@ -102,7 +95,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} YK Automotive. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} VAP Performance & Auto Care. All rights reserved.</p>
           <p>Proudly serving Peachtree City, GA</p>
         </div>
       </div>
