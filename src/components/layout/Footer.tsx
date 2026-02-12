@@ -17,13 +17,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {/* Column 1: Branding */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
-            <div className="flex items-center mb-4">
-              <img
-                src="/yk-logo.png"
-                alt="VAP Performance & Auto Care Logo"
-                className="w-14 sm:w-16 md:w-20 lg:w-24 h-14 sm:h-16 md:h-20 lg:h-24 object-contain"
-              />
-            </div>
+            <h3 className="text-white font-black text-xl mb-4">VAP Performance & Auto Care</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Your trusted partner for automotive service and repair in Peachtree City, GA.
             </p>

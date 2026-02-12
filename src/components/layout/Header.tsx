@@ -43,13 +43,9 @@ export function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
-          {/* Logo */}
+          {/* Brand Name */}
           <a href="#" className="flex items-center" onClick={(e) => handleNavClick(e, "#")}>
-            <img
-              src="/yk-logo.png"
-              alt="VAP Performance & Auto Care Logo"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
-            />
+            <span className="text-white font-black text-lg sm:text-xl md:text-2xl">VAP Performance</span>
           </a>
 
           {/* Desktop Navigation */}
