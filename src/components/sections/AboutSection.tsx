@@ -24,6 +24,7 @@ export function AboutSection() {
                 playsInline
                 className="w-full h-full object-cover"
               >
+                <source src="/about-video.webm" type="video/webm" />
                 <source src="/about-video.mp4" type="video/mp4" />
               </video>
               {/* Decorative Accent Blocks */}
