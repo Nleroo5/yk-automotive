@@ -3,13 +3,13 @@ import { Phone, Clock } from "lucide-react";
 
 export function CTASection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28 relative overflow-hidden bg-white">
+    <section className="section-padding relative overflow-hidden bg-white">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/6 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left: CTA Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -17,10 +17,10 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-foreground">
+            <h2 className="fluid-heading-lg font-black mb-6 text-foreground">
               Ready to Get Your Car Serviced?
             </h2>
-            <p className="text-muted text-lg mb-8">
+            <p className="text-muted fluid-body mb-8">
               Call us today or stop by our shop. We're here to help with all your automotive needs.
             </p>
 

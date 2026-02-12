@@ -64,7 +64,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative text-white py-20 sm:py-28 lg:py-36 overflow-hidden">
+    <section className="relative text-white section-padding overflow-hidden">
       {/* Video Background with Parallax */}
       <video
         ref={videoRef}
@@ -101,18 +101,18 @@ export function HeroSection() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="inline-block mb-4"
           >
-            <span className="text-primary text-sm sm:text-base font-bold uppercase tracking-widest">
+            <span className="text-primary fluid-body-sm font-bold uppercase tracking-widest">
               Peachtree City's Trusted Auto Repair
             </span>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+          <h1 className="fluid-heading-xl font-black mb-6 leading-tight tracking-tight">
             Your Vehicle.
             <br />
             <span className="text-primary">Our Expertise.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 max-w-2xl font-medium">
+          <p className="fluid-body-lg text-white/90 mb-8 sm:mb-10 max-w-2xl font-medium">
             Professional automotive service and repair in Peachtree City, GA.
             <span className="text-white/70 block mt-2">Quality work. Honest pricing. Expert technicians.</span>
           </p>

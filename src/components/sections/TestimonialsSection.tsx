@@ -4,17 +4,17 @@ import { reviews } from "../../data/reviews";
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28 relative" id="reviews">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="section-padding relative" id="reviews">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         {/* Header with Star Rating */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-12 md:mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-black mb-4 text-foreground">
+          <h2 className="fluid-heading-lg font-black mb-4 text-foreground">
             What Our Customers Say
           </h2>
           <div className="flex items-center justify-center gap-2 mb-3">
@@ -30,7 +30,7 @@ export function TestimonialsSection() {
         </motion.div>
 
         {/* Review Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {reviews.map((review, i) => (
             <motion.div
               key={review.name}
@@ -69,7 +69,7 @@ export function TestimonialsSection() {
           className="text-center mt-10"
         >
           <a
-            href="https://www.google.com/maps/place/YK+Automotive"
+            href="https://maps.app.goo.gl/H6eS4LM3wheSqwr6A"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary font-semibold text-sm hover:underline"

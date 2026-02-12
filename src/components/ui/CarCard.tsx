@@ -39,8 +39,8 @@ export function CarCard() {
         }}
       >
         {/* Header */}
-        <div className="p-8 pb-6 border-b border-gray-100">
-          <h2 className="text-3xl sm:text-4xl font-black text-foreground mb-3">
+        <div className="card-padding-sm pb-6 border-b border-gray-100">
+          <h2 className="fluid-heading-md font-black text-foreground mb-3">
             Professional. Honest. Reliable.
           </h2>
           <div className="flex items-center gap-2">
@@ -50,9 +50,9 @@ export function CarCard() {
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-6">
+        <div className="card-padding-sm space-y-6">
           {/* Description */}
-          <p className="text-foreground text-base leading-relaxed">
+          <p className="text-foreground fluid-body leading-relaxed">
             At YK Automotive, we treat every vehicle like our own. Located in Peachtree City, GA, we're committed to providing honest, high-quality service that keeps your car running at its best.
           </p>
 

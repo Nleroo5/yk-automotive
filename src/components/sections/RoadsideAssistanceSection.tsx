@@ -3,13 +3,13 @@ import { Phone, Shield, CheckCircle } from "lucide-react";
 
 export function RoadsideAssistanceSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28 relative overflow-hidden bg-linear-to-br from-red-50 via-red-100/50 to-red-50">
+    <section className="section-padding relative overflow-hidden bg-linear-to-br from-red-50 via-red-100/50 to-red-50">
       {/* Subtle Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Left Column: Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -24,11 +24,11 @@ export function RoadsideAssistanceSection() {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 text-foreground leading-tight">
+            <h2 className="fluid-heading-lg font-black mb-4 text-foreground leading-tight">
               24/7 Roadside Assistance
             </h2>
 
-            <p className="text-lg text-muted mb-8 leading-relaxed">
+            <p className="fluid-body text-muted mb-8 leading-relaxed">
               We've got you covered with nationwide support, available around the clock for warranty and roadside assistance.
             </p>
 
@@ -73,7 +73,7 @@ export function RoadsideAssistanceSection() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border-2 border-primary/10">
+            <div className="bg-white rounded-3xl card-padding shadow-2xl border-2 border-primary/10">
               <div className="text-center">
                 {/* Icon */}
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-6">
@@ -88,7 +88,7 @@ export function RoadsideAssistanceSection() {
                 {/* Phone Number */}
                 <a
                   href="tel:18884119567"
-                  className="block text-3xl sm:text-4xl lg:text-5xl font-black text-primary hover:text-primary-dark transition-colors mb-6"
+                  className="block fluid-heading-lg font-black text-primary hover:text-primary-dark transition-colors mb-6"
                 >
                   1-888-411-9567
                 </a>

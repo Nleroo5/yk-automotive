@@ -3,11 +3,11 @@ import { CarCard } from "../ui/CarCard";
 
 export function AboutSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28 relative" id="about">
+    <section className="section-padding relative" id="about">
       {/* Subtle metallic accent stripe */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-transparent via-chrome to-transparent opacity-20" />
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
           {/* Owner Video with Decorative Accents */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -16,7 +16,7 @@ export function AboutSection() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[3/4] max-w-md mx-auto lg:mx-0 bg-black">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[3/4] max-w-xs sm:max-w-sm md:max-w-md mx-auto lg:mx-0 bg-black">
               <video
                 autoPlay
                 loop

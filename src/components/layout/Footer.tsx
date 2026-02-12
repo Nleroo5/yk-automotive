@@ -13,15 +13,15 @@ export function Footer() {
     <footer className="bg-black text-gray-300 pt-16 pb-8 relative" id="contact">
       {/* Red accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-primary" />
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {/* Column 1: Branding */}
-          <div className="col-span-2 lg:col-span-1">
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <div className="flex items-center mb-4">
               <img
                 src="/yk-logo.png"
                 alt="YK Automotive Logo"
-                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+                className="w-14 sm:w-16 md:w-20 lg:w-24 h-14 sm:h-16 md:h-20 lg:h-24 object-contain"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">

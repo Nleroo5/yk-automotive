@@ -41,14 +41,14 @@ export function Header() {
         isScrolled ? "bg-black/80" : "bg-black"
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center" onClick={(e) => handleNavClick(e, "#")}>
             <img
               src="/yk-logo.png"
               alt="YK Automotive Logo"
-              className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain"
+              className="w-12 sm:w-14 md:w-16 lg:w-20 h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
             />
           </a>
 
@@ -111,7 +111,7 @@ export function Header() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed right-0 top-16 sm:top-20 bottom-0 w-64 bg-white shadow-xl lg:hidden"
+              className="fixed right-0 top-16 sm:top-18 md:top-20 bottom-0 w-72 sm:w-80 bg-white shadow-xl lg:hidden"
             >
               <nav className="flex flex-col p-6 gap-4">
                 {navLinks.map((link) => (
