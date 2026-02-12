@@ -10,14 +10,27 @@ interface ServiceCardProps {
 export function ServiceCard({ service, index }: ServiceCardProps) {
   const Icon = service.icon;
 
+  // Determine slide direction for outer cards
+  const isLeftCard = index === 0 || index === 3;
+  const isRightCard = index === 2 || index === 4;
+
+  const initialX = isLeftCard ? -300 : isRightCard ? 300 : 0;
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ delay: index * 0.1, duration: 0.5 }}
-      whileHover={{ y: -8 }}
-      className="group relative bg-white rounded-2xl p-6 sm:p-8 lg:p-10 shadow-md border border-gray-100 hover:shadow-[0_0_0_1px_rgba(34,110,147,0.2),0_20px_40px_rgba(0,0,0,0.1)] hover:border-primary/20 transition-all duration-300"
+      initial={{ opacity: 0, y: 40, x: initialX }}
+      whileInView={{ opacity: 1, y: 0, x: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ delay: index * 0.05, duration: 0.4, ease: "linear" }}
+      whileHover={{
+        y: -12,
+        rotateX: 5,
+        rotateY: 5,
+        scale: 1.02,
+        boxShadow: "0 25px 50px -12px rgba(220, 38, 38, 0.25), 0 0 0 2px rgba(220, 38, 38, 0.1)"
+      }}
+      className="group relative bg-white rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg border-2 border-gray-100 hover:border-primary/30 transition-all duration-300 cursor-pointer"
+      style={{ transformStyle: "preserve-3d" }}
     >
       {/* Top Light Gradient Effect */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50" />
@@ -27,17 +40,14 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         {service.number}
       </div>
 
-      {/* Category Badge */}
-      <div className="mb-4 sm:mb-5 lg:mb-6">
-        <span className="inline-block px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-muted bg-accent rounded-full">
-          {service.category}
-        </span>
-      </div>
-
       {/* Icon Container with Gradient Background */}
-      <div className="w-14 sm:w-16 h-14 sm:h-16 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:from-primary/20 group-hover:to-primary/10 transition-all duration-300">
-        <Icon className="w-7 sm:w-8 h-7 sm:h-8 text-primary" />
-      </div>
+      <motion.div
+        whileHover={{ scale: 1.1, rotate: 5 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="w-14 sm:w-16 h-14 sm:h-16 rounded-xl bg-linear-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-5 sm:mb-6 group-hover:from-primary/20 group-hover:to-primary/10 group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300"
+      >
+        <Icon className="w-7 sm:w-8 h-7 sm:h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+      </motion.div>
 
       {/* Content */}
       <h3 className="text-lg sm:text-xl font-black text-foreground mb-2 sm:mb-3">

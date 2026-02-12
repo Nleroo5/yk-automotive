@@ -4,8 +4,11 @@ import { services } from "../../data/services";
 
 export function ServicesSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 bg-white" id="services">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-20 sm:py-24 lg:py-32 relative bg-linear-to-b from-blue-50 via-blue-100/50 to-blue-50" id="services" style={{ overflowX: 'visible' }}>
+      {/* Top-down fade overlay */}
+      <div className="absolute inset-0 bg-linear-to-b from-white/60 via-transparent to-transparent pointer-events-none" />
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10" style={{ overflowX: 'visible' }}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,11 +28,21 @@ export function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* 3D Service Cards Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {services.map((service, i) => (
-            <ServiceCard key={service.title} service={service} index={i} />
-          ))}
+        {/* 3D Service Cards Grid - 3-2 Layout on Desktop */}
+        <div className="space-y-6 sm:space-y-8 lg:space-y-10">
+          {/* Top Row: 3 Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            {services.slice(0, 3).map((service, i) => (
+              <ServiceCard key={service.title} service={service} index={i} />
+            ))}
+          </div>
+
+          {/* Bottom Row: 2 Cards Centered */}
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-4xl mx-auto">
+            {services.slice(3, 5).map((service, i) => (
+              <ServiceCard key={service.title} service={service} index={i + 3} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

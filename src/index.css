@@ -1,22 +1,27 @@
 @import "tailwindcss";
 
-/* Tailwind v4 Theme Configuration */
+/* Tailwind v4 Theme Configuration - Bold & Confident Automotive Design */
 @theme {
-  /* Custom Colors */
-  --color-primary: #226E93;
-  --color-primary-dark: #1A5570;
-  --color-accent: #F8F9FA;
-  --color-accent-dark: #E9ECEF;
-  --color-foreground: #1F2937;
-  --color-muted: #6B7280;
-  --color-border: #E5E7EB;
-  --color-trust-gold: #F59E0B;
-  --color-success: #10B981;
-  --color-danger: #EF4444;
+  /* Primary Colors - Bold & Confident */
+  --color-primary: #DC2626;        /* Vibrant Racing Red */
+  --color-primary-dark: #B91C1C;   /* Deep Red */
+  --color-accent: #1A1A1A;         /* Deep Charcoal/Black */
+  --color-accent-dark: #0A0A0A;    /* Pure Black */
+  --color-foreground: #1F2937;     /* Dark Gray Text */
+  --color-muted: #6B7280;          /* Medium Gray */
+  --color-border: #E5E7EB;         /* Light Gray Border */
 
-  /* Font Families */
-  --font-sans: 'Lato', sans-serif;
-  --font-display: 'Space Grotesk', sans-serif;
+  /* Accent Colors */
+  --color-chrome: #C0C0C0;         /* Chrome Silver */
+  --color-white: #F8F9FA;          /* Warm White */
+  --color-trust-gold: #DAA520;     /* Gold Accent */
+  --color-success: #10B981;        /* Success Green */
+  --color-danger: #DC2626;         /* Alert Red */
+
+  /* Font Families - Bold Automotive Typography */
+  --font-sans: 'Inter', sans-serif;              /* Body text - modern, readable */
+  --font-display: 'Rajdhani', sans-serif;        /* Display/accents - automotive, geometric */
+  --font-heading: 'Poppins', sans-serif;         /* Headings - modern, geometric */
 
   /* Breakpoints */
   --breakpoint-sm: 640px;
@@ -38,4 +43,25 @@ body {
 /* Override any default anchor styles */
 a {
   text-decoration: none;
+}
+
+/* Sophisticated Background Patterns */
+.bg-diagonal-lines {
+  background-image:
+    linear-gradient(135deg, transparent 48%, rgba(220, 38, 38, 0.035) 48%, rgba(220, 38, 38, 0.035) 52%, transparent 52%);
+  background-size: 80px 80px;
+}
+
+.bg-subtle-texture {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(220, 38, 38, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 38, 38, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
 }

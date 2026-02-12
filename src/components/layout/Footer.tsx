@@ -10,16 +10,19 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8" id="contact">
+    <footer className="bg-black text-gray-300 pt-16 pb-8 relative" id="contact">
+      {/* Red accent line at top */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-primary" />
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1: Branding */}
           <div className="col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-white font-black text-xl">YK</span>
-              </div>
-              <span className="text-lg font-bold text-white">YK Automotive</span>
+            <div className="flex items-center mb-4">
+              <img
+                src="/yk-logo.png"
+                alt="YK Automotive Logo"
+                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Your trusted partner for automotive service and quality used vehicles in Atlanta, GA.

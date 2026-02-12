@@ -4,7 +4,7 @@ import { reviews } from "../../data/reviews";
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 sm:py-24 lg:py-28 bg-accent" id="reviews">
+    <section className="py-20 sm:py-24 lg:py-28 relative" id="reviews">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header with Star Rating */}
         <motion.div
@@ -24,8 +24,8 @@ export function TestimonialsSection() {
                 <Star key={i} className="w-5 h-5 fill-trust-gold text-trust-gold" />
               ))}
             </div>
-            <span className="text-foreground font-bold text-lg">4.9</span>
-            <span className="text-muted text-sm">on Google (500+ reviews)</span>
+            <span className="text-foreground font-bold text-lg">5.0</span>
+            <span className="text-muted text-sm">on Google</span>
           </div>
         </motion.div>
 
@@ -38,8 +38,12 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: i * 0.12, duration: 0.5 }}
-              whileHover={{ y: -4 }}
-              className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              whileHover={{
+                y: -4,
+                boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.15)",
+                borderColor: "rgba(220, 38, 38, 0.2)"
+              }}
+              className="bg-white rounded-2xl p-8 shadow-md border border-blue-500 transition-all duration-300 relative"
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
